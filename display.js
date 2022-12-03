@@ -7,8 +7,8 @@ created 6 Aug 2018
 by Tom Igoe
 */
 
-var value = "";
-var units = "";
+let value = "";
+let units = "";
 
 function fillDisplay(thisMeter) {
   // Is the meter connected or not?
@@ -25,9 +25,9 @@ function fillDisplay(thisMeter) {
   else {
     document.getElementById('value').value = thisMeter.negativePolarity + thisMeter.value;
   }
-  
+
   document.getElementById('units').value = units = thisMeter.magnitude
-  + thisMeter.units;
+    + thisMeter.units;
   // IF measuring voltage or amperage, indicate AC/DC:
   if (thisMeter.units === 'volts' || thisMeter.units === 'amps') {
     document.getElementById('acDc').value = thisMeter.acDc;
@@ -65,30 +65,143 @@ function fillDisplay(thisMeter) {
 function clearDisplay(meter) {
   document.getElementById('connected').value = 'Disconnected';
   document.getElementById('value').value = '';
-  document.getElementById('units').value =  '';
+  document.getElementById('units').value = '';
   document.getElementById('acDc').value = '';
   document.getElementById('autoRange').value = '';
   document.getElementById('hold').value = '';
   document.getElementById('setting').value = '';
 }
-var valueUpdated = false;
-var lastValue = 0;
+let valueUpdated = false;
+let lastValue = 0;
+let graphSlowestSpeed = 10000;
 
-var graphUpdateDelay = 15
+const graphSpeedMaximum = 1023;
+const graphKnobResponsivenessFactor = 8
 
-function animateGraph() {
-  setTimeout(() => {
-    data = data.slice(1);
+let graphKnobPerimeter
+let graphKnobHitBox
+let graphKnobShadow
+let graphSpeedKnobClicked = false;
+let graphSpeedIndicator
+let graphSpeedValueElement
+
+let graphSpeed = 0;
+let initialGraphSpeed;
+let graphSpeedKnobPreviousRotation = 0
+let mousePosition = {}
+let mousePositionDelta = {}
+let graphInterval=0;
+    
+function enableGraphAnimation() {
+  setInterval(() => {
+    if (!graphSpeed) return;
+    
+    let timeSinceLastUpdate = Date.now() - graphInterval;
+    let graphUpdateDelay = 49/(Math.pow(((graphSpeed+150)/(graphSpeedMaximum+10)),3)) //magic!!
+    let graphShouldUpdate = (timeSinceLastUpdate > graphUpdateDelay)
+    
+    if (graphShouldUpdate) {
+      data = data.slice(1);
       if (valueUpdated) {
-          valueUpdated = false;
-          lastValue = parseFloat(value)
+        valueUpdated = false;
+        lastValue = parseFloat(value)
       }
-    data.push(parseFloat(lastValue));
-    mainChart.data.datasets[0].data = data;
-    mainChart.data.datasets[0].label = units;
-    mainChart.update('none');
-    animateGraph()
-  }, graphUpdateDelay);
+      data.push(parseFloat(lastValue));
+      mainChart.data.datasets[0].data = data;
+      mainChart.data.datasets[0].label = units;
+      mainChart.update('none');
+      graphInterval = Date.now()
+    }
+  }, 1000/30);
 }
 
-animateGraph()
+function go() {
+  graphKnobPerimeter = document.getElementById('knob')
+  graphKnobShadow = document.getElementById('knobshadow')
+  graphKnobHitBox = document.getElementById('knobhitbox')
+  graphSpeedValueElement = document.getElementById('graph-speed-value')
+  updateGraphSpeedDisplay()
+  enableGraphAnimation()
+
+  graphKnobPerimeter.setAttribute("transform-origin", "494.5 135.7")
+  graphKnobShadow.setAttribute("transform-origin", "490.7 144.05")
+
+  graphKnobHitBox.addEventListener('mousedown', ((event) => {
+    graphSpeedKnobClicked = true;
+    if (event.preventDefault)
+      event.preventDefault();
+    mousePosition = {
+      x: event.clientX,
+      y: event.clientY
+    };
+    initialGraphSpeed = graphSpeed;
+    graphSpeedKnobPreviousRotation = 0;
+  }))
+
+  document.addEventListener('mouseup', ((event) => {
+    if (graphSpeedKnobClicked) {
+      console.log('mouseup. graphspeed = ' + graphSpeed);
+      graphSpeedKnobClicked = false;
+    }
+  }))
+
+  document.addEventListener('mousemove', ((event) => {
+    if (graphSpeedKnobClicked) {
+      mousePositionDelta = {
+        x: event.clientX - mousePosition.x,
+        y: event.clientY - mousePosition.y
+      };
+      turn(mousePositionDelta.y);
+    }
+  }))
+}
+
+function turn(_rotation) {
+  graphKnobPerimeter.setAttribute("transform", "rotate(" + _rotation + ")")
+  graphKnobShadow.setAttribute("transform", "rotate(" + _rotation + ")")
+
+  let rotationValueIncreasing = false
+  let rotationValueDecreasing = false
+
+  if (_rotation > graphSpeedKnobPreviousRotation) {
+    rotationValueIncreasing = true;
+  }
+  else if (_rotation < graphSpeedKnobPreviousRotation) {
+    rotationValueDecreasing = true;
+  }
+
+  graphSpeed = initialGraphSpeed + _rotation * graphKnobResponsivenessFactor;
+
+  if (graphSpeed < 0) {
+    if (rotationValueIncreasing) {
+      // if you go past the minimum, then increase, this causes the value to immediately start increasing instead of waiting to return to the 0 position
+      initialGraphSpeed = initialGraphSpeed - graphSpeed
+    }
+    graphSpeed = 0
+  }
+  else if (graphSpeed > graphSpeedMaximum) {
+    if (rotationValueDecreasing) {
+      // if you go past the maximum, then decrease, this causes the value to immediately start decreasing instead of waiting to return to the 0 position
+      initialGraphSpeed = (graphSpeedMaximum - _rotation * graphKnobResponsivenessFactor)
+    }
+    graphSpeed = graphSpeedMaximum
+  }
+
+  graphSpeedKnobPreviousRotation = _rotation;
+  updateGraphSpeedDisplay()
+}
+
+function updateGraphSpeedDisplay() {
+  let innerHTML = '';
+  let numOfChars = Math.ceil(graphSpeed / ((graphSpeedMaximum - 1) / 10))
+  for (let i = 0; i < numOfChars; i++) {
+    innerHTML = innerHTML + '.'
+  }
+  graphSpeedValueElement.innerHTML = innerHTML
+}
+
+document.addEventListener('DOMContentLoaded', (function () {
+  // wait for the svg to finish loading
+  setTimeout(go, 100)
+}))
+

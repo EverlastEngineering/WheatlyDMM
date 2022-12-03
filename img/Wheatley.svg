@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="-2 -2 661 320" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="325.959" y1="202.196" x2="325.959" y2="279.044" id="gradient-0" gradientTransform="matrix(0.999999, -0.001495, 0.001494, 0.998507, -82.377914, -150.091129)">
+      <stop offset="0" style="stop-color: rgb(22, 19, 20);"/>
+      <stop offset="1" style="stop-color: rgb(39, 26, 26);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="329.508" y1="120.671" x2="329.508" y2="197.519" id="gradient-1" gradientTransform="matrix(0.999937, -0.011216, 0.005973, 0.532639, -86.78466, 43.406956)">
+      <stop offset="0" style="stop-color: rgb(51, 51, 51);"/>
+      <stop offset="1" style="stop-color: rgb(128, 128, 128);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="413.783" y1="69.584" x2="413.783" y2="357.234" id="gradient-2" gradientTransform="matrix(1, 0, 0, 1.10595, -85.281532, -76.956879)">
+      <stop offset="0" style="stop-color: rgb(49, 43, 34);"/>
+      <stop offset="0.923" style="stop-color: rgb(103, 93, 78);"/>
+      <stop offset="0.969" style="stop-color: rgb(182, 173, 160);"/>
+      <stop offset="1" style="stop-color: rgb(151, 137, 117);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="413.783" y1="69.584" x2="413.783" y2="357.234" id="gradient-3" gradientTransform="matrix(1, 0, 0, 1.10595, -85.281532, -76.956879)">
+      <stop offset="0" style="stop-color: rgb(122, 104, 85);"/>
+      <stop offset="1" style="stop-color: rgb(100, 91, 73);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="413.783" y1="69.584" x2="413.783" y2="179.485" id="gradient-4" gradientTransform="matrix(1, 0, 0, 1, -85.281387, -69.584406)">
+      <stop offset="0" style=""/>
+      <stop offset="1" style="stop-color: rgb(41, 25, 25);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="141.652" y1="302.699" x2="141.652" y2="317.41" id="gradient-13" gradientTransform="matrix(0.628313, 0, 0, 1.196477, 45.965595, -127.606773)">
+      <stop offset="0" style="stop-color: rgba(255, 255, 255, 0.68);"/>
+      <stop offset="0.072" style="stop-color: rgba(255, 255, 255, 0.26);"/>
+      <stop offset="0.937" style="stop-color: rgba(255, 255, 255, 0.31);"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="494.535" y1="121.102" x2="494.535" y2="150.204" id="gradient-17" gradientTransform="matrix(0.97638, 0.216061, -0.217658, 0.983601, 41.700958, -104.630699)">
+      <stop offset="0" style="stop-color: rgb(45, 40, 37);"/>
+      <stop offset="0.33" style="stop-color: rgb(190, 136, 104);"/>
+      <stop offset="0.779" style="stop-color: rgb(190, 136, 104);"/>
+      <stop offset="1" style="stop-color: rgb(234, 216, 205);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="293.294" y1="-288.761" x2="293.294" y2="806.353" id="gradient-20" gradientTransform="matrix(0.989106, 0.147202, -0.157121, 1.055753, 66.059279, -79.80411)">
+      <stop offset="0" style="stop-color: rgb(215, 172, 132);"/>
+      <stop offset="1" style="stop-color: rgb(146, 95, 48);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="141.652" y1="302.699" x2="141.652" y2="317.41" id="gradient-22" gradientTransform="matrix(0.628313, 0, 0, 1.196477, 45.965595, -127.606773)">
+      <stop offset="0" style="stop-color: rgba(255, 255, 255, 0.68);"/>
+      <stop offset="0.072" style="stop-color: rgba(255, 255, 255, 0.26);"/>
+      <stop offset="0.937" style="stop-color: rgba(255, 255, 255, 0.31);"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="141.652" y1="302.699" x2="141.652" y2="317.41" id="gradient-10" gradientTransform="matrix(0.628313, 0, 0, 1.196477, 45.965595, -127.606773)">
+      <stop offset="0" style="stop-color: rgba(255, 255, 255, 0.68);"/>
+      <stop offset="0.072" style="stop-color: rgba(255, 255, 255, 0.26);"/>
+      <stop offset="0.937" style="stop-color: rgba(255, 255, 255, 0.31);"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="141.652" y1="302.699" x2="141.652" y2="317.41" id="gradient-11" gradientTransform="matrix(0.628313, 0, 0, 1.196477, 45.965595, -127.606773)">
+      <stop offset="0" style="stop-color: rgba(255, 255, 255, 0.68);"/>
+      <stop offset="0.072" style="stop-color: rgba(255, 255, 255, 0.26);"/>
+      <stop offset="0.937" style="stop-color: rgba(255, 255, 255, 0.31);"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="141.652" y1="302.699" x2="141.652" y2="317.41" id="gradient-14" gradientTransform="matrix(0.628313, 0, 0, 1.196477, 45.965595, -127.606773)">
+      <stop offset="0" style="stop-color: rgba(255, 255, 255, 0.68);"/>
+      <stop offset="0.072" style="stop-color: rgba(255, 255, 255, 0.26);"/>
+      <stop offset="0.937" style="stop-color: rgba(255, 255, 255, 0.31);"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="141.652" y1="302.699" x2="141.652" y2="317.41" id="gradient-15" gradientTransform="matrix(0.628313, 0, 0, 1.196477, 45.965595, -127.606773)">
+      <stop offset="0" style="stop-color: rgba(255, 255, 255, 0.68);"/>
+      <stop offset="0.072" style="stop-color: rgba(255, 255, 255, 0.26);"/>
+      <stop offset="0.937" style="stop-color: rgba(255, 255, 255, 0.31);"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="141.652" y1="302.699" x2="141.652" y2="317.41" id="gradient-16" gradientTransform="matrix(0.628313, 0, 0, 1.196477, 45.965595, -127.606773)">
+      <stop offset="0" style="stop-color: rgba(255, 255, 255, 0.68);"/>
+      <stop offset="0.072" style="stop-color: rgba(255, 255, 255, 0.26);"/>
+      <stop offset="0.937" style="stop-color: rgba(255, 255, 255, 0.31);"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="141.652" y1="302.699" x2="141.652" y2="317.41" id="gradient-12" gradientTransform="matrix(0.628313, 0, 0, 1.196477, 45.965595, -127.606773)">
+      <stop offset="0" style="stop-color: rgba(255, 255, 255, 0.68);"/>
+      <stop offset="0.072" style="stop-color: rgba(255, 255, 255, 0.26);"/>
+      <stop offset="0.937" style="stop-color: rgba(255, 255, 255, 0.31);"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="141.652" y1="302.699" x2="141.652" y2="317.41" id="gradient-23" gradientTransform="matrix(0.628313, 0, 0, 1.196477, 45.965595, -127.606773)">
+      <stop offset="0" style="stop-color: rgba(255, 255, 255, 0.68);"/>
+      <stop offset="0.072" style="stop-color: rgba(255, 255, 255, 0.26);"/>
+      <stop offset="0.937" style="stop-color: rgba(255, 255, 255, 0.31);"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="141.652" y1="302.699" x2="141.652" y2="317.41" id="gradient-24" gradientTransform="matrix(0.628313, 0, 0, 1.196477, 45.965595, -127.606773)">
+      <stop offset="0" style="stop-color: rgba(255, 255, 255, 0.68);"/>
+      <stop offset="0.072" style="stop-color: rgba(255, 255, 255, 0.26);"/>
+      <stop offset="0.937" style="stop-color: rgba(255, 255, 255, 0.31);"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="141.652" y1="302.699" x2="141.652" y2="317.41" id="gradient-25" gradientTransform="matrix(0.628313, 0, 0, 1.196477, 45.965595, -127.606773)">
+      <stop offset="0" style="stop-color: rgba(255, 255, 255, 0.68);"/>
+      <stop offset="0.072" style="stop-color: rgba(255, 255, 255, 0.26);"/>
+      <stop offset="0.937" style="stop-color: rgba(255, 255, 255, 0.31);"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="141.652" y1="302.699" x2="141.652" y2="317.41" id="gradient-7" gradientTransform="matrix(0.628313, 0, 0, 1.196477, 45.965595, -127.606773)">
+      <stop offset="0" style="stop-color: rgba(255, 255, 255, 0.68);"/>
+      <stop offset="0.072" style="stop-color: rgba(255, 255, 255, 0.26);"/>
+      <stop offset="0.937" style="stop-color: rgba(255, 255, 255, 0.31);"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="141.652" y1="302.699" x2="141.652" y2="317.41" id="gradient-8" gradientTransform="matrix(0.628313, 0, 0, 1.196477, 45.965595, -127.606773)">
+      <stop offset="0" style="stop-color: rgba(255, 255, 255, 0.68);"/>
+      <stop offset="0.072" style="stop-color: rgba(255, 255, 255, 0.26);"/>
+      <stop offset="0.937" style="stop-color: rgba(255, 255, 255, 0.31);"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="141.652" y1="302.699" x2="141.652" y2="317.41" id="gradient-9" gradientTransform="matrix(0.628313, 0, 0, 1.196477, 45.965595, -127.606773)">
+      <stop offset="0" style="stop-color: rgba(255, 255, 255, 0.68);"/>
+      <stop offset="0.072" style="stop-color: rgba(255, 255, 255, 0.26);"/>
+      <stop offset="0.937" style="stop-color: rgba(255, 255, 255, 0.31);"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="328.502" cy="159.299" r="298.32" id="gradient-19">
+      <stop offset="0" style="stop-color: rgba(255, 255, 255, 1)"/>
+      <stop offset="1" style="stop-color: rgba(204, 204, 204, 1)"/>
+    </radialGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="596.127" cy="252.319" r="6.584" id="gradient-5" gradientTransform="matrix(0.285986, -1.075704, 0.966429, 0.256935, 182.306777, 829.539437)">
+      <stop offset="0" style="stop-color: rgb(210, 202, 193);"/>
+      <stop offset="0.146" style="stop-color: rgb(164, 145, 128);"/>
+      <stop offset="0.8" style="stop-color: rgb(163, 144, 126);"/>
+      <stop offset="1" style="stop-color: rgb(42, 35, 30);"/>
+    </radialGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="621.416" cy="293.907" r="11.722" id="gradient-6" gradientTransform="matrix(2.405229, 0, 0, 0.915346, -882.479877, 31.222052)">
+      <stop offset="0" style="stop-color: rgb(255, 255, 255);"/>
+      <stop offset="1" style="stop-color: rgba(255, 255, 255, 0);"/>
+    </radialGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="621.416" cy="293.907" r="11.722" id="gradient-21" gradientTransform="matrix(2.405229, 0, 0, 0.915346, -1455.061615, 30.340506)">
+      <stop offset="0" style="stop-color: rgb(255, 255, 255);"/>
+      <stop offset="1" style="stop-color: rgba(255, 255, 255, 0);"/>
+    </radialGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="494.535" y1="117.177" x2="494.535" y2="154.129" id="gradient-26" gradientTransform="matrix(-0.924338, -0.24233, 0.230627, -0.879701, 920.361248, 374.867007)">
+      <stop offset="0" style="stop-color: rgb(83, 61, 45);"/>
+      <stop offset="1" style="stop-color: rgb(230, 190, 158);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="325.959" y1="202.196" x2="325.959" y2="279.044" id="gradient-18" gradientTransform="matrix(0.168161, -0.000252, 0.000252, 0.167911, 439.613312, 157.453735)">
+      <stop offset="0" style="stop-color: rgb(22, 19, 20);"/>
+      <stop offset="1" style="stop-color: rgb(39, 26, 26);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="329.508" y1="120.671" x2="329.508" y2="197.519" id="gradient-27" gradientTransform="matrix(0.168151, -0.001886, 0.001004, 0.08957, 438.872284, 189.992767)">
+      <stop offset="0" style="stop-color: rgb(51, 51, 51);"/>
+      <stop offset="1" style="stop-color: rgb(128, 128, 128);"/>
+    </linearGradient>
+  </defs>
+  <rect style="stroke-width: 3px; fill: url(#gradient-2); stroke: url(#gradient-3);" width="657.004" height="318.127" rx="12.966" ry="12.966"/>
+  <ellipse style="fill: url(#gradient-6);" cx="612.168" cy="300.249" rx="28.194" ry="10.73"/>
+  <ellipse style="fill: url(#gradient-21);" cx="39.586" cy="299.367" rx="28.194" ry="10.73"/>
+  <rect style="stroke-width: 3px; fill: rgb(117, 89, 62);" x="25.387" y="13.036" width="605.959" height="292.854" rx="16" ry="16"/>
+  <rect style="stroke-width: 3px; fill: rgb(117, 89, 62); stroke: url(#gradient-19);" y="16.891" width="596.64" height="284.815" rx="12.966" ry="12.966" x="30.182"/>
+  <rect style="stroke: rgb(255, 255, 255); stroke-width: 4px; fill: rgb(53, 34, 10);" y="45.182" width="396.513" height="88.968" rx="12.966" ry="12.966" x="45.672"/>
+  <rect style="fill: url(#gradient-0); stroke: url(#gradient-1); stroke-width: 0.5px;" y="51.087" width="383.546" height="76.848" rx="4.131" ry="4.131" x="52.454"/>
+  <g transform="matrix(1, 0, 0, 1, -85.490532, -65.506104)">
+    <rect width="68.523" height="12.783" style="fill: rgb(255, 45, 54); stroke: rgb(255, 255, 255);" x="145.614" y="89.642"/>
+    <g style="" transform="matrix(0.89336, 0, 0, 0.944252, 19.118715, 5.36206)">
+      <path d="M 151.629 99.44 L 150.136 93.741 L 148.625 99.44 C 148.507 99.872 148.414 100.182 148.344 100.37 C 148.275 100.558 148.154 100.727 147.982 100.875 C 147.81 101.024 147.581 101.099 147.295 101.099 C 147.065 101.099 146.875 101.055 146.725 100.966 C 146.577 100.878 146.456 100.752 146.363 100.59 C 146.271 100.428 146.196 100.236 146.136 100.013 C 146.078 99.791 146.025 99.584 145.979 99.394 L 144.442 92.995 C 144.35 92.624 144.304 92.34 144.304 92.146 C 144.304 91.9 144.388 91.692 144.555 91.524 C 144.723 91.355 144.931 91.27 145.179 91.27 C 145.519 91.27 145.748 91.383 145.866 91.608 C 145.984 91.833 146.086 92.159 146.174 92.587 L 147.384 98.137 L 148.738 92.944 C 148.839 92.546 148.929 92.243 149.009 92.036 C 149.089 91.828 149.219 91.649 149.399 91.498 C 149.58 91.346 149.826 91.27 150.136 91.27 C 150.452 91.27 150.696 91.349 150.87 91.507 C 151.044 91.665 151.165 91.837 151.232 92.023 C 151.3 92.209 151.39 92.516 151.503 92.944 L 152.87 98.137 L 154.079 92.587 C 154.138 92.297 154.194 92.07 154.246 91.906 C 154.299 91.742 154.389 91.595 154.517 91.465 C 154.645 91.335 154.831 91.27 155.075 91.27 C 155.319 91.27 155.525 91.354 155.695 91.521 C 155.865 91.687 155.95 91.895 155.95 92.146 C 155.95 92.323 155.904 92.606 155.811 92.995 L 154.275 99.394 C 154.17 99.827 154.083 100.143 154.013 100.344 C 153.944 100.545 153.826 100.721 153.66 100.872 C 153.495 101.023 153.261 101.099 152.958 101.099 C 152.673 101.099 152.444 101.025 152.272 100.879 C 152.1 100.732 151.98 100.566 151.912 100.382 C 151.846 100.199 151.751 99.885 151.629 99.44 Z M 158.972 92.438 L 158.972 95.161 L 163.01 95.161 L 163.01 92.438 C 163.01 92.049 163.095 91.757 163.265 91.563 C 163.435 91.368 163.659 91.27 163.936 91.27 C 164.218 91.27 164.445 91.367 164.619 91.56 C 164.794 91.752 164.881 92.044 164.881 92.438 L 164.881 99.925 C 164.881 100.319 164.793 100.613 164.616 100.808 C 164.44 101.002 164.214 101.099 163.936 101.099 C 163.655 101.099 163.43 101.001 163.262 100.804 C 163.094 100.607 163.01 100.315 163.01 99.925 L 163.01 96.73 L 158.972 96.73 L 158.972 99.925 C 158.972 100.319 158.884 100.613 158.708 100.808 C 158.532 101.002 158.305 101.099 158.028 101.099 C 157.747 101.099 157.522 101.001 157.354 100.804 C 157.186 100.607 157.102 100.315 157.102 99.925 L 157.102 92.438 C 157.102 92.049 157.185 91.757 157.351 91.563 C 157.517 91.368 157.742 91.27 158.028 91.27 C 158.31 91.27 158.537 91.367 158.711 91.56 C 158.885 91.752 158.972 92.044 158.972 92.438 Z M 172.873 92.917 L 168.659 92.917 L 168.659 95.252 L 172.539 95.252 C 172.825 95.252 173.039 95.317 173.179 95.449 C 173.32 95.581 173.39 95.755 173.39 95.971 C 173.39 96.187 173.321 96.363 173.182 96.499 C 173.044 96.636 172.829 96.704 172.539 96.704 L 168.659 96.704 L 168.659 99.407 L 173.018 99.407 C 173.312 99.407 173.534 99.477 173.683 99.618 C 173.832 99.758 173.906 99.945 173.906 100.179 C 173.906 100.404 173.832 100.586 173.683 100.726 C 173.534 100.867 173.312 100.937 173.018 100.937 L 167.935 100.937 C 167.528 100.937 167.235 100.844 167.056 100.658 C 166.878 100.472 166.789 100.172 166.789 99.758 L 166.789 92.613 C 166.789 92.336 166.829 92.11 166.908 91.935 C 166.988 91.76 167.113 91.633 167.283 91.552 C 167.453 91.473 167.671 91.433 167.935 91.433 L 172.873 91.433 C 173.172 91.433 173.394 91.501 173.538 91.637 C 173.683 91.773 173.755 91.952 173.755 92.172 C 173.755 92.397 173.683 92.578 173.538 92.713 C 173.394 92.849 173.172 92.917 172.873 92.917 Z M 181.202 99.861 L 180.761 98.668 L 177.007 98.668 L 176.566 99.887 C 176.394 100.362 176.247 100.683 176.125 100.85 C 176.004 101.016 175.805 101.099 175.527 101.099 C 175.292 101.099 175.084 101.01 174.903 100.833 C 174.723 100.656 174.632 100.455 174.632 100.23 C 174.632 100.1 174.653 99.967 174.695 99.829 C 174.737 99.69 174.807 99.498 174.903 99.251 L 177.265 93.08 C 177.333 92.903 177.414 92.69 177.508 92.441 C 177.603 92.192 177.704 91.986 177.81 91.822 C 177.918 91.657 178.058 91.524 178.232 91.423 C 178.407 91.321 178.622 91.27 178.878 91.27 C 179.138 91.27 179.356 91.321 179.53 91.423 C 179.704 91.524 179.845 91.655 179.952 91.816 C 180.059 91.976 180.149 92.147 180.223 92.331 C 180.297 92.514 180.39 92.76 180.503 93.066 L 182.915 99.2 C 183.105 99.666 183.199 100.006 183.199 100.218 C 183.199 100.438 183.11 100.64 182.931 100.824 C 182.753 101.007 182.538 101.099 182.286 101.099 C 182.139 101.099 182.013 101.072 181.908 101.019 C 181.803 100.964 181.715 100.891 181.643 100.798 C 181.572 100.705 181.495 100.562 181.413 100.37 C 181.331 100.178 181.261 100.008 181.202 99.861 Z M 177.498 97.223 L 180.257 97.223 L 178.865 93.3 L 177.498 97.223 Z M 189.9 93.021 L 187.859 93.021 L 187.859 99.925 C 187.859 100.323 187.773 100.618 187.601 100.811 C 187.429 101.003 187.207 101.099 186.933 101.099 C 186.657 101.099 186.431 101.002 186.256 100.808 C 186.082 100.613 185.995 100.319 185.995 99.925 L 185.995 93.021 L 183.954 93.021 C 183.635 93.021 183.398 92.949 183.242 92.804 C 183.087 92.659 183.009 92.468 183.009 92.231 C 183.009 91.984 183.09 91.79 183.252 91.647 C 183.414 91.504 183.648 91.433 183.954 91.433 L 189.9 91.433 C 190.224 91.433 190.464 91.506 190.621 91.653 C 190.779 91.8 190.857 91.993 190.857 92.231 C 190.857 92.468 190.778 92.659 190.618 92.804 C 190.459 92.949 190.22 93.021 189.9 93.021 Z M 193.132 92.438 L 193.132 99.355 L 196.924 99.355 C 197.226 99.355 197.458 99.431 197.62 99.583 C 197.782 99.734 197.862 99.924 197.862 100.153 C 197.862 100.386 197.783 100.575 197.623 100.72 C 197.463 100.865 197.23 100.937 196.924 100.937 L 192.407 100.937 C 192 100.937 191.707 100.844 191.529 100.658 C 191.351 100.472 191.261 100.172 191.261 99.758 L 191.261 92.438 C 191.261 92.049 191.346 91.757 191.516 91.563 C 191.686 91.368 191.91 91.27 192.187 91.27 C 192.469 91.27 192.696 91.367 192.87 91.56 C 193.045 91.752 193.132 92.044 193.132 92.438 Z M 205.074 92.917 L 200.86 92.917 L 200.86 95.252 L 204.74 95.252 C 205.026 95.252 205.24 95.317 205.38 95.449 C 205.521 95.581 205.591 95.755 205.591 95.971 C 205.591 96.187 205.522 96.363 205.383 96.499 C 205.245 96.636 205.03 96.704 204.74 96.704 L 200.86 96.704 L 200.86 99.407 L 205.219 99.407 C 205.513 99.407 205.735 99.477 205.884 99.618 C 206.033 99.758 206.107 99.945 206.107 100.179 C 206.107 100.404 206.033 100.586 205.884 100.726 C 205.735 100.867 205.513 100.937 205.219 100.937 L 200.136 100.937 C 199.729 100.937 199.436 100.844 199.257 100.658 C 199.079 100.472 198.989 100.172 198.989 99.758 L 198.989 92.613 C 198.989 92.336 199.029 92.11 199.109 91.935 C 199.189 91.76 199.314 91.633 199.484 91.552 C 199.654 91.473 199.872 91.433 200.136 91.433 L 205.074 91.433 C 205.372 91.433 205.594 91.501 205.739 91.637 C 205.884 91.773 205.956 91.952 205.956 92.172 C 205.956 92.397 205.884 92.578 205.739 92.713 C 205.594 92.849 205.372 92.917 205.074 92.917 Z M 209.553 99.925 L 209.553 96.911 L 207.298 93.313 C 207.1 92.989 206.961 92.736 206.879 92.555 C 206.797 92.373 206.756 92.215 206.756 92.081 C 206.756 91.861 206.839 91.671 207.005 91.51 C 207.171 91.35 207.375 91.27 207.619 91.27 C 207.875 91.27 208.069 91.345 208.201 91.495 C 208.334 91.644 208.533 91.941 208.797 92.386 L 210.523 95.271 L 212.267 92.386 C 212.373 92.209 212.461 92.06 212.532 91.938 C 212.604 91.818 212.682 91.704 212.768 91.599 C 212.854 91.492 212.95 91.411 213.055 91.355 C 213.16 91.299 213.288 91.27 213.439 91.27 C 213.675 91.27 213.871 91.349 214.028 91.507 C 214.186 91.665 214.264 91.848 214.264 92.056 C 214.264 92.224 214.224 92.392 214.144 92.561 C 214.065 92.73 213.929 92.963 213.735 93.261 L 211.423 96.911 L 211.423 99.925 C 211.423 100.319 211.335 100.613 211.159 100.808 C 210.983 101.002 210.758 101.099 210.485 101.099 C 210.208 101.099 209.983 101.003 209.811 100.811 C 209.639 100.618 209.553 100.323 209.553 99.925 Z" style="fill: rgb(255, 255, 255); white-space: pre; stroke: rgb(255, 44, 54); stroke-width: 0.5px;"/>
+    </g>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; letter-spacing: 1.3px; text-anchor: middle; white-space: pre;" x="275.09" y="99.327">314 ELECTROMETER</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -85.281387, -44.652191)">
+    <rect style="stroke-width: 0px; stroke: rgb(255, 52, 57); fill: rgb(254, 51, 55);" x="128.762" y="215.781" width="147.742" height="112.361" rx="10" ry="10"/>
+    <rect style="stroke-width: 0px; stroke: rgb(255, 52, 57); fill: rgb(117, 89, 62);" x="394.133" y="260.689" width="17.53" height="15.161"/>
+    <path style="stroke-width: 0px; stroke: rgb(255, 52, 57); fill: rgb(255, 206, 113);" d="M 154.847 215.781 H 500.69 A 10 10 0 0 1 510.69 225.781 V 318.181 A 10 10 0 0 1 500.69 328.181 H 154.847 V 215.781 Z" bx:shape="rect 154.847 215.781 355.843 112.4 0 10 10 0 1@64413a60"/>
+    <path style="stroke-width: 0px; stroke: rgb(255, 52, 57); fill: rgb(177, 126, 79);" d="M 191 235.363 H 399.954 V 328.257 H 181 V 245.363 A 10 10 0 0 1 191 235.363 Z" bx:shape="rect 181 235.363 218.954 92.894 10 0 0 0 1@2a28db51"/>
+    <path style="stroke-width: 0px; stroke: rgb(255, 52, 57); fill: rgb(155, 105, 69);" d="M 217.034 254.958 H 392.123 V 328.289 H 207.034 V 264.958 A 10 10 0 0 1 217.034 254.958 Z" bx:shape="rect 207.034 254.958 185.089 73.331 10 0 0 0 1@47cd8ce2"/>
+    <g transform="matrix(0.951419, 0, 0, 0.959559, -22.342743, 12.354108)" style="">
+      <path style="stroke-width: 0px; stroke: rgb(255, 52, 57); fill: rgb(117, 89, 62);" d="M 277.278 273.175 H 565.636 V 331.193 H 267.278 V 283.175 A 10 10 0 0 1 277.278 273.175 Z" bx:shape="rect 267.278 273.175 298.358 58.018 10 0 0 0 1@ef4b48fe"/>
+      <g transform="matrix(1, 0, 0, 1, -0.461654, 26.213829)">
+        <rect style="stroke-width: 0px; stroke: rgb(255, 52, 57); fill: rgb(117, 89, 62);" x="252.406" y="290.326" width="17.53" height="15.161"/>
+        <path style="stroke-width: 0px; stroke: rgb(255, 52, 57); fill: rgb(155, 105, 69);" d="M 250.203 287.91 H 267.733 V 295.491 A 7.6 7.581 0 0 1 260.133 303.071 H 250.203 V 287.91 Z" bx:shape="rect 250.203 287.91 17.53 15.161 0 0 7.6 0 1@639f64fd"/>
+      </g>
+    </g>
+    <path style="stroke-width: 0px; fill: rgb(117, 89, 62);" d="M 498.67 260.794 H 508.6 A 7.6 7.6 0 0 1 516.2 268.394 V 280.394 H 498.67 V 260.794 Z" bx:shape="rect 498.67 260.794 17.53 19.6 0 7.6 0 0 1@a8d961e8"/>
+    <path style="stroke-width: 0px; stroke: rgb(255, 52, 57); fill: rgb(155, 105, 69);" d="M 386.058 254.976 H 510.69 V 266.976 A 7.6 7.6 0 0 1 503.09 274.576 H 386.058 V 254.976 Z" bx:shape="rect 386.058 254.976 124.632 19.6 0 0 7.6 0 1@768872a3"/>
+    <rect style="stroke-width: 0px; stroke: rgb(255, 52, 57); fill: rgb(177, 126, 79);" x="384.463" y="235.357" width="126.227" height="19.619"/>
+    <rect style="stroke-width: 0px; fill: rgb(117, 89, 62);" x="402.908" y="212.033" width="3.594" height="63.567"/>
+  </g>
+  <rect style="stroke-width: 0px; stroke: rgb(255, 52, 57); fill: rgb(176, 121, 83);" y="43.539" width="73.726" height="239.806" rx="10" ry="10" x="457.672"/>
+  <g>
+    <path d="M 490.66 125.139 L 492.936 126.101 L 495.38 125.737 L 497.346 127.236 L 499.803 127.492 L 501.335 129.434 L 503.651 130.295 L 504.654 132.558 L 506.684 133.97 L 507.093 136.412 L 508.709 138.285 L 508.5 140.752 L 509.601 142.969 L 508.786 145.307 L 509.302 147.729 L 507.933 149.79 L 507.832 152.264 L 505.995 153.92 L 505.283 156.291 L 503.093 157.436 L 501.815 159.556 L 499.41 160.119 L 497.646 161.853 L 495.177 161.799 L 493.039 163.039 L 490.66 162.371 L 488.281 163.039 L 486.143 161.799 L 483.674 161.853 L 481.91 160.119 L 479.505 159.556 L 478.227 157.436 L 476.037 156.291 L 475.325 153.92 L 473.488 152.264 L 473.387 149.79 L 472.018 147.729 L 472.534 145.307 L 471.719 142.969 L 472.82 140.752 L 472.611 138.285 L 474.227 136.412 L 474.636 133.97 L 476.666 132.558 L 477.669 130.295 L 479.985 129.434 L 481.517 127.492 L 483.974 127.236 L 485.94 125.737 L 488.384 126.101 Z" style="opacity: 0.3;" id="knobshadow" bx:shape="star 490.66 144.164 18.978 19.025 0.957 25 1@5b2d5490" bx:origin="0.499736 0.498971"/>
+    <ellipse style="stroke-width: 2px; fill: rgb(124, 85, 59); stroke: rgb(124, 85, 59);" cx="492.634" cy="139.946" rx="17.655" ry="17.655"/>
+    <g style="" transform="matrix(1.040013, -0.570324, 0.150394, 1.254383, -68.375832, 237.069229)"/>
+    <ellipse style="stroke: url(#gradient-26); fill: none; stroke-width: 2px;" cx="494.535" cy="135.653" rx="17.655" ry="17.655"/>
+    <path d="M 494.535 117.481 L 496.615787357 119.253872044 L 499.072098301 118.054168808 L 500.646618549 120.28881359 L 503.32411403 119.737660929 L 504.29343427 122.293667499 L 507.023877401 122.425696361 L 507.327091677 125.142461425 L 509.938918673 125.949375952 L 509.556974918 128.65619517 L 511.886075083 130.087293955 L 510.842972228 132.61408792 L 512.742999633 134.579449762 L 511.104279666 136.767450717 L 512.455848602 139.143584703 L 510.324478326 140.855312501 L 511.042664745 143.492917395 L 508.552565992 144.620817883 L 508.592243601 147.354163269 L 505.899878435 147.827366311 L 505.258554143 150.484706045 L 502.533093768 150.273478554 L 501.251064339 152.687842209 L 498.663759454 151.805456384 L 496.821579513 153.825140611 L 494.535 152.32704 L 492.248420487 153.825140611 L 490.406240546 151.805456384 L 487.818935661 152.687842209 L 486.536906232 150.273478554 L 483.811445857 150.484706045 L 483.170121565 147.827366311 L 480.477756399 147.354163269 L 480.517434008 144.620817883 L 478.027335255 143.492917395 L 478.745521674 140.855312501 L 476.614151398 139.143584703 L 477.965720334 136.767450717 L 476.327000367 134.579449762 L 478.227027772 132.61408792 L 477.183924917 130.087293955 L 479.513025082 128.65619517 L 479.131081327 125.949375952 L 481.742908323 125.142461425 L 482.046122599 122.425696361 L 484.77656573 122.293667499 L 485.74588597 119.737660929 L 488.423381451 120.28881359 L 489.997901699 118.054168808 L 492.454212643 119.253872044 Z" style="fill: rgb(140, 96, 64);" id="knob" transform="matrix(1, -0.000001, 0.000001, 1, 0.000171, 0.000326)" bx:shape="star 494.535 135.725 18.244 18.244 0.91 25 1@596754e6" bx:origin="0.512761 0.509552"/>
+    <ellipse style="stroke: rgb(176, 121, 83); fill: rgb(190, 136, 104);" cx="494.535" cy="135.653" rx="15.516" ry="15.516"/>
+    <ellipse style="fill: none; stroke: url(#gradient-17); stroke-width: 0.8px;" cx="494.535" cy="135.653" rx="14.551" ry="14.551"/>
+    <ellipse style="opacity: 0;" cx="494.535" cy="135.653" rx="18.686" ry="18.686" id="knobhitbox"/>
+  </g>
+  <rect style="stroke-width: 0px; stroke: rgb(255, 52, 57); fill: rgb(202, 145, 90);" y="43.539" width="73.726" height="161.651" rx="10" ry="10" x="538.68"/>
+  <g style="" transform="matrix(0.02906, 0, 0, 0.02906, 567.019897, 128.132385)">
+    <rect style="fill: url(#gradient-20);" x="-97.607" y="-288.761" width="781.802" height="1095.114" rx="344.116" ry="344.116"/>
+    <path d="M 313.801 780.71 C 392.263 770.806 465.145 779.066 544.818 695.851 C 620.529 616.773 655.546 459.78 655.546 552.383 L 608.057 783.035 C 578.194 976.728 443.183 1156.405 253.133 1156.405 L 161.75 1155.224 C -28.3 1155.224 -182.366 1001.158 -182.366 811.108 L -194.035 34.24 C -194.035 -80.396 -178.97 -178.415 -163.842 30.923 C -158.647 102.815 -113.256 337.439 -82.969 483.674 C -43.796 672.814 158.916 800.261 313.801 780.71 Z" style="opacity: 0.3;" transform="matrix(0.998783, 0.049321, -0.186637, 0.992002, 114.536591, -10.371957)" id="bbuttonshadow"/>
+    <g id="bluetooth">
+      <rect ry="291" height="976" width="640" fill="#0a3d91" x="-26.706" y="-229.204" id="bbutton"/>
+      <path d="M 130.294 100.796 L 435.294 407.796 L 288.294 585.796 L 288.294 -50.204 L 435.294 119.796 L 130.294 418.796" fill="none" stroke="#FFF" style="" stroke-width="53"/>
+    </g>
+  </g>
+  <g>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; letter-spacing: 1.3px; text-anchor: middle; white-space: pre;" x="131.686" y="165.197">FUNCTION</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; letter-spacing: 1.3px; text-anchor: middle; white-space: pre;" x="387.51" y="165.197">RANGE</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; letter-spacing: 1.3px; text-anchor: middle; white-space: pre;" x="265.6" y="165.197">UNITS</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" x="82.239" y="246.035">I</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" x="108.242" y="246.035">R</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" x="134.245" y="246.035">V</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" x="160.249" y="246.035">O</text>
+    <g>
+      <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; letter-spacing: 1.3px; text-anchor: middle; white-space: pre;" x="166.691" y="295.942" transform="matrix(1, 0, 0, 1, -109.571396, -104.36396)">ON<tspan x="166.6909942626953" dy="1em">​</tspan><tspan x="166.6909942626953" dy="1em">​</tspan><tspan x="166.6909942626953" dy="1em">​</tspan>OFF</text>
+      <g transform="matrix(1, 0, 0, 1, -14.398933, -74.092911)">
+        <rect style="fill: rgb(255, 255, 255);" x="64.89" y="254.884" width="12.523" height="1.479" rx="1" ry="1"/>
+        <g transform="matrix(1, 0, 0, 1, 0, 4)">
+          <rect style="fill: rgb(255, 255, 255);" x="64.89" y="275.298" width="12.523" height="1.479" rx="1" ry="1"/>
+          <path style="fill: rgb(255, 255, 255);" d="M 68.364 269.846 H 73.938 A 1 1 0 0 1 74.938 270.846 V 276.126 H 67.364 V 270.846 A 1 1 0 0 1 68.364 269.846 Z" bx:shape="rect 67.364 269.846 7.574 6.28 1 1 0 0 1@3ceef179"/>
+        </g>
+        <path style="fill: rgb(255, 255, 255);" d="M 68.364 253.579 H 73.938 A 1 1 0 0 1 74.938 254.579 V 255.776 H 67.364 V 254.579 A 1 1 0 0 1 68.364 253.579 Z" bx:shape="rect 67.364 253.579 7.574 2.197 1 1 0 0 1@f4ffa026"/>
+      </g>
+    </g>
+    <rect style="fill: rgb(117, 89, 62);" y="194.139" width="26.769" height="2.324" x="42.78"/>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" x="305.63" y="224.078">VAC</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" x="252.758" y="204.199">Ω</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" x="279.194" y="204.199">kΩ</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" x="305.63" y="204.199">MΩ</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" x="279.194" y="224.078">V</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" transform="matrix(1, 0, 0, 1, -12.312148, 3)"><tspan x="265.07" y="221.078">mV</tspan><tspan x="265.07" dy="1em">​</tspan></text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" x="252.758" y="184.68">μA</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" x="279.194" y="185.1">mA</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" x="305.63" y="185.1">A</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" x="332.066" y="224.078">4</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" x="358.502" y="224.078">40</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" x="384.938" y="224.078">400</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" x="411.374" y="224.078">600</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" x="332.066" y="185.1">4</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" x="358.502" y="185.1">10</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" x="384.938" y="185.1">40</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" x="411.374" y="185.1">600</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" x="332.066" y="204.199">4</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" x="358.502" y="204.199">40</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" x="384.938" y="204.199">400</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; letter-spacing: -4.5px; text-anchor: middle; white-space: pre;" x="276.989" y="246.035">°F</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; text-anchor: middle; white-space: pre;" transform="matrix(1, 0, 0, 1, -15.312148, 24.957001)" x="265.07000732421875" y="221.0780029296875"><tspan style="letter-spacing: -4.5px;">°C</tspan><tspan x="265.07000732421875" dy="1em">​</tspan></text>
+    <g>
+      <path style="fill: none; stroke: rgb(255, 255, 255); stroke-linejoin: round; stroke-linecap: round;" d="M 300.1 242.784 L 311.076 242.784"/>
+      <path d="M 128.812 162.91 L 131.751 168.788 L 125.873 168.788 L 128.812 162.91 Z" style="stroke: rgb(255, 255, 255); stroke-linejoin: round; stroke-linecap: round; fill: rgb(117, 89, 62);" transform="matrix(0, 1, -1, 0, 471.318604, 113.972244)" bx:shape="triangle 125.873 162.91 5.878 5.878 0.5 0 1@a7079030"/>
+      <path style="fill: none; stroke: rgb(255, 255, 255); stroke-linejoin: round; stroke-linecap: round;" d="M 308.653 239.849 L 308.653 245.719"/>
+    </g>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; letter-spacing: 1.3px; text-anchor: middle; white-space: pre;" x="495.221" y="67.501" transform="matrix(1, 0, 0, 1, -0.685997, 0)">GRAPH<tspan x="495.22100830078125" dy="1.2em">​</tspan>SPEED</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; letter-spacing: 1.3px; text-anchor: middle; white-space: pre;" x="166.691" y="295.942" transform="matrix(1, 0, 0, 1, 340.306274, -51.015053)">ON<tspan x="166.6909942626953" dy="1em">​</tspan><tspan x="166.6909942626953" dy="1em">​</tspan><tspan x="166.6909942626953" dy="1em">​</tspan>OFF</text>
+    <g transform="matrix(1, 0, 0, 1, 435.845795, -20.744011)">
+      <rect style="fill: rgb(255, 255, 255);" x="64.89" y="254.884" width="12.523" height="1.479" rx="1" ry="1"/>
+      <g transform="matrix(1, 0, 0, 1, 0, 4)">
+        <rect style="fill: rgb(255, 255, 255);" x="64.89" y="275.298" width="12.523" height="1.479" rx="1" ry="1"/>
+        <path style="fill: rgb(255, 255, 255);" d="M 68.364 269.846 H 73.938 A 1 1 0 0 1 74.938 270.846 V 276.126 H 67.364 V 270.846 A 1 1 0 0 1 68.364 269.846 Z" bx:shape="rect 67.364 269.846 7.574 6.28 1 1 0 0 1@3ceef179"/>
+      </g>
+      <path style="fill: rgb(255, 255, 255);" d="M 68.364 253.579 H 73.938 A 1 1 0 0 1 74.938 254.579 V 255.776 H 67.364 V 254.579 A 1 1 0 0 1 68.364 253.579 Z" bx:shape="rect 67.364 253.579 7.574 2.197 1 1 0 0 1@f4ffa026"/>
+    </g>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; letter-spacing: 1.3px; text-anchor: middle; white-space: pre;" x="575.543" y="67.501">INPUT</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; letter-spacing: 1.3px; text-anchor: middle; white-space: pre;" x="495.221" y="67.501" transform="matrix(1, 0, 0, 1, 80.321991, 162.664505)">ZERO GRAPH<tspan x="495.22100830078125" dy="1.2em">​</tspan></text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 423.451385, 6.390828)">
+    <path style="opacity: 0.3;" d="M 129.767 236.93 L 131.983 250.953 L 138.983 252.494 C 137.764 255.112 134.88 261.285 133.223 261.285 L 128.98 261.285 C 127.875 261.285 126.98 260.195 126.98 258.848 L 126.98 247.016 C 126.98 244.997 128.73 238.572 129.767 236.93 Z" id="zbuttonshadow" class="shadow"/>
+    <path style="opacity: 0.6;" d="M 130.675 235.431 L 138.46 252.004 L 139.659 251.442 C 139.114 252.763 138.294 253.365 136.637 253.365 L 131.825 253.293 C 130.702 253.239 129.245 252.003 129.245 250.655 L 129.3 239.638 C 129.3 237.62 130.755 235.515 130.675 235.431 Z"/>
+    <rect style="fill: rgb(117, 89, 62); stroke: url(#gradient-7);" x="130.346" y="234.565" width="9.243" height="17.601" rx="2" ry="2" id="zbutton"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 346.840759, 6.390828)">
+    <path style="opacity: 0.3;" d="M 129.767 236.93 L 131.983 250.953 L 138.983 252.494 C 137.764 255.112 134.88 261.285 133.223 261.285 L 128.98 261.285 C 127.875 261.285 126.98 260.195 126.98 258.848 L 126.98 247.016 C 126.98 244.997 128.73 238.572 129.767 236.93 Z" id="gbuttonshadow" class="shadow"/>
+    <path style="opacity: 0.6;" d="M 130.675 235.431 L 138.46 252.004 L 139.659 251.442 C 139.114 252.763 138.294 253.365 136.637 253.365 L 131.825 253.293 C 130.702 253.239 129.245 252.003 129.245 250.655 L 129.3 239.638 C 129.3 237.62 130.755 235.515 130.675 235.431 Z"/>
+    <rect style="stroke: url(#gradient-8); fill: rgb(176, 121, 83);" x="130.346" y="234.565" width="9.243" height="17.601" rx="2" ry="2" id="gbutton"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 276.406311, 21)">
+    <path style="opacity: 0.3;" d="M 129.767 236.93 L 131.983 250.953 L 138.983 252.494 C 137.764 255.112 134.88 261.285 133.223 261.285 L 128.98 261.285 C 127.875 261.285 126.98 260.195 126.98 258.848 L 126.98 247.016 C 126.98 244.997 128.73 238.572 129.767 236.93 Z" id="range4shadow" class="shadow"/>
+    <path style="opacity: 0.6;" d="M 130.675 235.431 L 138.46 252.004 L 139.659 251.442 C 139.114 252.763 138.294 253.365 136.637 253.365 L 131.825 253.293 C 130.702 253.239 129.245 252.003 129.245 250.655 L 129.3 239.638 C 129.3 237.62 130.755 235.515 130.675 235.431 Z"/>
+    <rect style="fill: rgb(117, 89, 62); stroke: url(#gradient-13);" x="130.346" y="234.565" width="9.243" height="17.601" rx="2" ry="2"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 249.958679, 21)">
+    <path style="opacity: 0.3;" d="M 129.767 236.93 L 131.983 250.953 L 138.983 252.494 C 137.764 255.112 134.88 261.285 133.223 261.285 L 128.98 261.285 C 127.875 261.285 126.98 260.195 126.98 258.848 L 126.98 247.016 C 126.98 244.997 128.73 238.572 129.767 236.93 Z" id="range3shadow" class="shadow"/>
+    <path style="opacity: 0.6;" d="M 130.675 235.431 L 138.46 252.004 L 139.659 251.442 C 139.114 252.763 138.294 253.365 136.637 253.365 L 131.825 253.293 C 130.702 253.239 129.245 252.003 129.245 250.655 L 129.3 239.638 C 129.3 237.62 130.755 235.515 130.675 235.431 Z"/>
+    <rect style="fill: rgb(117, 89, 62); stroke: url(#gradient-22);" x="130.346" y="234.565" width="9.243" height="17.601" rx="2" ry="2"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 223.511017, 21)">
+    <path style="opacity: 0.3;" d="M 129.767 236.93 L 131.983 250.953 L 138.983 252.494 C 137.764 255.112 134.88 261.285 133.223 261.285 L 128.98 261.285 C 127.875 261.285 126.98 260.195 126.98 258.848 L 126.98 247.016 C 126.98 244.997 128.73 238.572 129.767 236.93 Z" id="range2shadow" class="shadow"/>
+    <path style="opacity: 0.6;" d="M 130.675 235.431 L 138.46 252.004 L 139.659 251.442 C 139.114 252.763 138.294 253.365 136.637 253.365 L 131.825 253.293 C 130.702 253.239 129.245 252.003 129.245 250.655 L 129.3 239.638 C 129.3 237.62 130.755 235.515 130.675 235.431 Z"/>
+    <rect style="fill: rgb(117, 89, 62); stroke: url(#gradient-10);" x="130.346" y="234.565" width="9.243" height="17.601" rx="2" ry="2"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 197.063354, 21)">
+    <path style="opacity: 0.3;" d="M 129.767 236.93 L 131.983 250.953 L 138.983 252.494 C 137.764 255.112 134.88 261.285 133.223 261.285 L 128.98 261.285 C 127.875 261.285 126.98 260.195 126.98 258.848 L 126.98 247.016 C 126.98 244.997 128.73 238.572 129.767 236.93 Z" id="range1shadow" class="shadow"/>
+    <path style="opacity: 0.6;" d="M 130.675 235.431 L 138.46 252.004 L 139.659 251.442 C 139.114 252.763 138.294 253.365 136.637 253.365 L 131.825 253.293 C 130.702 253.239 129.245 252.003 129.245 250.655 L 129.3 239.638 C 129.3 237.62 130.755 235.515 130.675 235.431 Z"/>
+    <rect style="fill: rgb(117, 89, 62); stroke: url(#gradient-11);" x="130.346" y="234.565" width="9.243" height="17.601" rx="2" ry="2"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 170.615692, 21)">
+    <path style="opacity: 0.3;" d="M 129.767 236.93 L 131.983 250.953 L 138.983 252.494 C 137.764 255.112 134.88 261.285 133.223 261.285 L 128.98 261.285 C 127.875 261.285 126.98 260.195 126.98 258.848 L 126.98 247.016 C 126.98 244.997 128.73 238.572 129.767 236.93 Z" id="unit3shadow" class="shadow"/>
+    <path style="opacity: 0.6;" d="M 130.675 235.431 L 138.46 252.004 L 139.659 251.442 C 139.114 252.763 138.294 253.365 136.637 253.365 L 131.825 253.293 C 130.702 253.239 129.245 252.003 129.245 250.655 L 129.3 239.638 C 129.3 237.62 130.755 235.515 130.675 235.431 Z"/>
+    <rect style="fill: rgb(117, 89, 62); stroke: url(#gradient-14);" x="130.346" y="234.565" width="9.243" height="17.601" rx="2" ry="2"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 144.16803, 21)">
+    <path style="opacity: 0.3;" d="M 129.767 236.93 L 131.983 250.953 L 138.983 252.494 C 137.764 255.112 134.88 261.285 133.223 261.285 L 128.98 261.285 C 127.875 261.285 126.98 260.195 126.98 258.848 L 126.98 247.016 C 126.98 244.997 128.73 238.572 129.767 236.93 Z" id="unit2shadow" class="shadow"/>
+    <path style="opacity: 0.6;" d="M 130.675 235.431 L 138.46 252.004 L 139.659 251.442 C 139.114 252.763 138.294 253.365 136.637 253.365 L 131.825 253.293 C 130.702 253.239 129.245 252.003 129.245 250.655 L 129.3 239.638 C 129.3 237.62 130.755 235.515 130.675 235.431 Z"/>
+    <rect style="fill: rgb(117, 89, 62); stroke: url(#gradient-15);" x="130.346" y="234.565" width="9.243" height="17.601" rx="2" ry="2"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 117.891869, 21)">
+    <path style="opacity: 0.3;" d="M 129.767 236.93 L 131.983 250.953 L 138.983 252.494 C 137.764 255.112 134.88 261.285 133.223 261.285 L 128.98 261.285 C 127.875 261.285 126.98 260.195 126.98 258.848 L 126.98 247.016 C 126.98 244.997 128.73 238.572 129.767 236.93 Z" id="unit1shadow" class="shadow"/>
+    <path style="opacity: 0.6;" d="M 130.675 235.431 L 138.46 252.004 L 139.659 251.442 C 139.114 252.763 138.294 253.365 136.637 253.365 L 131.825 253.293 C 130.702 253.239 129.245 252.003 129.245 250.655 L 129.3 239.638 C 129.3 237.62 130.755 235.515 130.675 235.431 Z"/>
+    <rect style="fill: rgb(117, 89, 62); stroke: url(#gradient-16);" x="130.346" y="234.565" width="9.243" height="17.601" rx="2" ry="2"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 25.281071, 20.94663)">
+    <path style="opacity: 0.3;" d="M 129.767 236.93 L 131.983 250.953 L 138.983 252.494 C 137.764 255.112 134.88 261.285 133.223 261.285 L 128.98 261.285 C 127.875 261.285 126.98 260.195 126.98 258.848 L 126.98 247.016 C 126.98 244.997 128.73 238.572 129.767 236.93 Z" id="obuttonshadow" class="shadow"/>
+    <path style="opacity: 0.6;" d="M 130.675 235.431 L 138.46 252.004 L 139.659 251.442 C 139.114 252.763 138.294 253.365 136.637 253.365 L 131.825 253.293 C 130.702 253.239 129.245 252.003 129.245 250.655 L 129.3 239.638 C 129.3 237.62 130.755 235.515 130.675 235.431 Z"/>
+    <rect style="fill: rgb(117, 89, 62); stroke: url(#gradient-12);" x="130.346" y="234.565" width="9.243" height="17.601" rx="2" ry="2"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -0.722026, 20.94663)">
+    <path style="opacity: 0.3;" d="M 129.767 236.93 L 131.983 250.953 L 138.983 252.494 C 137.764 255.112 134.88 261.285 133.223 261.285 L 128.98 261.285 C 127.875 261.285 126.98 260.195 126.98 258.848 L 126.98 247.016 C 126.98 244.997 128.73 238.572 129.767 236.93 Z" id="vbuttonshadow" class="shadow"/>
+    <path style="opacity: 0.6;" d="M 130.675 235.431 L 138.46 252.004 L 139.659 251.442 C 139.114 252.763 138.294 253.365 136.637 253.365 L 131.825 253.293 C 130.702 253.239 129.245 252.003 129.245 250.655 L 129.3 239.638 C 129.3 237.62 130.755 235.515 130.675 235.431 Z"/>
+    <rect style="stroke: url(#gradient-23); fill: rgb(155, 105, 69);" x="130.346" y="234.565" width="9.243" height="17.601" rx="2" ry="2"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -26.725121, 20.94663)">
+    <path style="opacity: 0.3;" d="M 129.767 236.93 L 131.983 250.953 L 138.983 252.494 C 137.764 255.112 134.88 261.285 133.223 261.285 L 128.98 261.285 C 127.875 261.285 126.98 260.195 126.98 258.848 L 126.98 247.016 C 126.98 244.997 128.73 238.572 129.767 236.93 Z" id="rbuttonshadow" class="shadow"/>
+    <path style="opacity: 0.6;" d="M 130.675 235.431 L 138.46 252.004 L 139.659 251.442 C 139.114 252.763 138.294 253.365 136.637 253.365 L 131.825 253.293 C 130.702 253.239 129.245 252.003 129.245 250.655 L 129.3 239.638 C 129.3 237.62 130.755 235.515 130.675 235.431 Z"/>
+    <rect style="stroke: url(#gradient-24); fill: rgb(177, 126, 79);" x="130.346" y="234.565" width="9.243" height="17.601" rx="2" ry="2"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -52.728214, 20.94663)">
+    <path style="opacity: 0.3;" d="M 129.767 236.93 L 131.983 250.953 L 138.983 252.494 C 137.764 255.112 134.88 261.285 133.223 261.285 L 128.98 261.285 C 127.875 261.285 126.98 260.195 126.98 258.848 L 126.98 247.016 C 126.98 244.997 128.73 238.572 129.767 236.93 Z" id="ibuttonshadow" class="shadow"/>
+    <path style="opacity: 0.6;" d="M 130.675 235.431 L 138.46 252.004 L 139.659 251.442 C 139.114 252.763 138.294 253.365 136.637 253.365 L 131.825 253.293 C 130.702 253.239 129.245 252.003 129.245 250.655 L 129.3 239.638 C 129.3 237.62 130.755 235.515 130.675 235.431 Z"/>
+    <rect style="stroke: url(#gradient-25); fill: rgb(255, 206, 113);" x="130.346" y="234.565" width="9.243" height="17.601" rx="2" ry="2"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -78.277687, 20.94663)">
+    <path style="opacity: 0.3;" d="M 129.767 236.93 L 131.983 250.953 L 138.983 252.494 C 137.764 255.112 134.88 261.285 133.223 261.285 L 128.98 261.285 C 127.875 261.285 126.98 260.195 126.98 258.848 L 126.98 247.016 C 126.98 244.997 128.73 238.572 129.767 236.93 Z" id="pbuttonshadow" class="shadow"/>
+    <path style="opacity: 0.6;" d="M 130.675 235.431 L 138.46 252.004 L 139.659 251.442 C 139.114 252.763 138.294 253.365 136.637 253.365 L 131.825 253.293 C 130.702 253.239 129.245 252.003 129.245 250.655 L 129.3 239.638 C 129.3 237.62 130.755 235.515 130.675 235.431 Z"/>
+    <rect style="stroke: url(#gradient-9); fill: rgb(254, 51, 55);" x="130.346" y="234.565" width="9.243" height="17.601" rx="2" ry="2" id="pbutton"/>
+  </g>
+  <g transform="matrix(1.258557, 0, 0, 1.258557, -159.477783, -68.018761)" style="" id="eebutton">
+    <ellipse style="stroke: url(#gradient-5); stroke-width: 1.5081px;" cx="596.824" cy="252.435" rx="6.584" ry="6.584"/>
+    <g style="" transform="matrix(0.005519, 0, 0, 0.005519, 600.845825, 251.968872)">
+      <ellipse style="fill: none; stroke-width: 110px; stroke: rgb(255, 255, 255);" cx="-728.721" cy="84.459" rx="881.653" ry="884.297"/>
+      <polygon style="fill: none; stroke-linecap: square; stroke-width: 70px; stroke: rgb(255, 255, 255);" points="-1306.809 -253.79 -1082.824 -476.374 -774.611 -173.172 -988.011 38.322 -960.438 65.898 -746.611 -146.444 -462.403 140.189 -839.185 516.668 -811.158 543.792 -412.495 139.856 -1082.04 -530.79 -1334.155 -280.958" transform="matrix(-1, 0, 0, -1, -1746.650024, 13.002075)"/>
+      <polygon style="fill: none; stroke-linecap: square; stroke-width: 70px; stroke: rgb(255, 255, 255);" points="-1011.801 -101.812 -787.816 -324.395 -479.603 -21.194 -694.36 189.396 -668.142 216.52 -451.603 5.534 -167.396 292.167 -544.177 668.646 -515.698 695.77 -117.488 291.834 -787.033 -378.811 -1039.147 -128.98"/>
+    </g>
+  </g>
+  <path style="stroke-width: 0px; fill: url(#gradient-4); fill-opacity: 0.18;" d="M 12.966 0 L 644.038 0 C 651.199 0 657.004 5.805 657.004 12.966 L 631.281 68.749 L 25.686 110.269 L 0 12.966 C 0 5.805 5.805 0 12.966 0 Z"/>
+  <g id="graphspeedindicator">
+    <rect style="stroke-width: 0.5px; fill: url(#gradient-18); stroke: url(#gradient-27);" x="462.286" y="191.283" width="64.498" height="12.923" rx="2" ry="2"/>
+  </g>
+</svg>

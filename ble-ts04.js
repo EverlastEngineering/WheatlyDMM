@@ -190,11 +190,11 @@ function decode(data) {
     meter.setting = 'Voltage';
   }
   if ((masked & 0b10000) > 0) {
-    meter.units = '℉'; // degrees Fahrenheit
+    meter.units = '°F'; // degrees Fahrenheit
     meter.setting = 'Temperature';
   }
   if ((masked & 0b100000) > 0) {
-    meter.units = '℃'; // degrees Centigrade
+    meter.units = '°C'; // degrees Centigrade
     meter.setting = 'Temperature';
   }
   if ((masked & 0b10000000) > 0) {

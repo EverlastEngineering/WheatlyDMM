@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang='en'>
+
 <head>
   <meta charset='utf-8'>
   <title>General Tools ToolSmart TS-04 Multimeter</title>
@@ -7,25 +8,46 @@
   <script src='ble-ts04.js'></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fonts.css">
+  <script src="./js-svg-loader.js"></script>
 </head>
 
 <body>
   <!-- <div>chrome://flags/#enable-web-bluetooth-new-permissions-backend</div> -->
-  
+  <div>
+      <div id="meter">
+      <svg src="./img/Wheatley.svg" id="svg">
+      <div class="display">
+        <!--     <label aria-live="off">Reading: </label> -->
+        <div class="output">
+          <output class='value value-background'>8. 8. 8. 8. 8. 8</output>
+          <output class='value' id='value'>-. 0. 0. 0. 0. 0</output>
+          <output id='units'>mV</output>
+        </div>
+      </div>
+      <div class="graphspeeddisplay">
+        <!--     <label aria-live="off">Reading: </label> -->
+        <div class="output">
+          <output class='value value-background' style="opacity: 0.18;">...........</output>
+          <output class="value" id="graph-speed-value">...........</output>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- no -->
   <div id='display'>
     <output id='status'>disconnected</output>
     <!-- <label aria-live="polite">Meter: </label><br> -->
     <!-- <label aria-live="polite">Setting: <output id='setting'></output></label> <br> -->
-      <!-- <label aria-live="polite">Units: <output id='units'></output></label><br> -->
-      <!-- <label aria-live="polite">Current Direction:<output id='acDc'></output> </label><br>
-      <output id='autoRange' aria-live="polite" ></output>
-      <output id='hold' aria-live="polite"></output><br> -->
-  </div>
-  <div class="display">
-<!--     <label aria-live="off">Reading: </label> -->
-      <div class="output">
-        <output class='value' style="position:absolute; top:26px; opacity: 0.05;">88.8.8.8</output>
-        <output class='value' id='value'>-000.0</output> <output id='units'>mV</output></div>
+    <!-- <label aria-live="polite">Units: <output id='units'></output></label><br> -->
+    <!-- <label aria-live="polite">Current Direction:<output id='acDc'></output> </label><br>
+        <output id='autoRange' aria-live="polite" ></output>
+        <output id='hold' aria-live="polite"></output><br> -->
   </div>
   <button onClick='connect()'>connect</button>
   <button onClick='disconnect()'>disconnect</button>
@@ -70,4 +92,5 @@
     });
   </script>
 </body>
+
 </html>
