@@ -1,50 +1,67 @@
 /* DSEG7 7SEG */
 :root {
-	--width-factor:
-	calc(100vw * 1 - 20px);
---top-pad: 10px;
+  --width-factor: calc(100vw * 1 - 20px);
+  --top-pad: 10px;
 }
 
 body {
-	background-color: rgb(27, 27, 27);
-	margin: 0px;
-	margin-top: var(--top-pad);
+  background-color: rgb(27, 27, 27);
+  margin: 0px;
+  margin-top: var(--top-pad);
 }
 
 .output {
-	/* background-color: #2e1414; */
-	}
+  /* background-color: #2e1414; */
+}
 
 #meter {
-	width: var(--width-factor);
-	margin: auto;
+  width: var(--width-factor);
+  margin: auto;
 }
-	
-.display {font-size: calc(0.07 * var(--width-factor));width: calc(1 * var(--width-factor));position: absolute;top: 0px;margin-top: calc(0.098 * var(--width-factor) + var(--top-pad));margin-left: calc(0.12 * var(--width-factor));font-family: 'DSEG7-Classic';}
-.graphspeeddisplay {width: calc(1 * var(--width-factor));position: absolute;top: 0px;margin-top: calc((0.269* var(--width-factor)) + var(--top-pad));margin-left: calc(0.712 * var(--width-factor));font-size: calc(0.032 * var(--width-factor));font-family: 'DSEG14-Classic';letter-spacing: .8vw;}
+
+.display {
+  font-size: calc(0.07 * var(--width-factor));
+  width: calc(1 * var(--width-factor));
+  position: absolute;
+  top: 0px;
+  margin-top: calc(0.098 * var(--width-factor) + var(--top-pad));
+  margin-left: calc(0.12 * var(--width-factor));
+  font-family: "DSEG7-Classic";
+}
+.graphspeeddisplay {
+  /* width: calc(0.1 * var(--width-factor)); */
+  position: absolute;
+  top: 0px;
+  margin-top: calc((0.297 * var(--width-factor)) + var(--top-pad));
+  margin-left: calc(0.707 * var(--width-factor));
+  font-size: calc(0.009 * var(--width-factor));
+  font-family: "DSEG14-Classic";
+  letter-spacing: 0.08vw;
+}
 
 .value {
-	/* font-family: 'DSEG7-Classic'; */
-	font-style: italic;
-	font-weight: bold;
-	transform: scaleY(1.15);
-	/* margin: 40px; */
-	display: inline-block;
+  /* font-family: 'DSEG7-Classic'; */
+  font-style: italic;
+  font-weight: bold;
+  transform: scaleY(1.15);
+  /* margin: 40px; */
+  display: inline-block;
 }
 
 #units {
-	font-family: monospace;
-	font-size: calc(0.04 * var(--width-factor));
-	/* font-style: italic; */
-	margin-left: 4%;
+  font-family: monospace;
+  font-size: calc(0.04 * var(--width-factor));
+  /* font-style: italic; */
+  margin-left: 4%;
 }
 
-#units, .value  {
-	color: red;
-	text-shadow: 0 0 10px #e500006c, 0 0 3px #ff000088;
+#units,
+.value {
+  color: red;
+  text-shadow: 0 0 10px #e500006c, 0 0 3px #ff000088;
 }
 
 .value-background {
-	position:absolute;
-	opacity: 0.08;
+  position: absolute;
+  opacity: 0.08;
 }

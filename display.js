@@ -81,23 +81,28 @@ const graphKnobResponsivenessFactor = 8
 let graphKnobPerimeter
 let graphKnobHitBox
 let graphKnobShadow
+let graphButton
+let graphButtonShadow
 let graphSpeedKnobClicked = false;
 let graphSpeedIndicator
 let graphSpeedValueElement
 
-let graphSpeed = 0;
+let graphSpeed = 783;
 let initialGraphSpeed;
 let graphSpeedKnobPreviousRotation = 0
 let mousePosition = {}
 let mousePositionDelta = {}
 let graphInterval=0;
-    
+let graphUpdateDelay=66.6666;
+let graphEnabled=false;
+
+
+let iv2;
 function enableGraphAnimation() {
   setInterval(() => {
-    if (!graphSpeed) return;
-    
+    if (!graphEnabled) return
     let timeSinceLastUpdate = Date.now() - graphInterval;
-    let graphUpdateDelay = 49/(Math.pow(((graphSpeed+150)/(graphSpeedMaximum+10)),3)) //magic!!
+    graphUpdateDelay = 49/(Math.pow(((graphSpeed+150)/(graphSpeedMaximum+10)),3)) //magic!!
     let graphShouldUpdate = (timeSinceLastUpdate > graphUpdateDelay)
     
     if (graphShouldUpdate) {
@@ -116,17 +121,26 @@ function enableGraphAnimation() {
 }
 
 function go() {
+  graphButton = document.getElementById('gbutton')
+  graphButtonShadow = document.getElementById('gbuttonshadow')
+
   graphKnobPerimeter = document.getElementById('knob')
   graphKnobShadow = document.getElementById('knobshadow')
   graphKnobHitBox = document.getElementById('knobhitbox')
   graphSpeedValueElement = document.getElementById('graph-speed-value')
-  updateGraphSpeedDisplay()
+  graphMessage()
   enableGraphAnimation()
+
+graphButton.addEventListener('mousedown', (event) => {
+  graphEnabled = !graphEnabled
+  graphButtonShadow.style.opacity = (graphButtonShadow.style.opacity == 0.3)?0:0.3
+  graphMessage()
+})
 
   graphKnobPerimeter.setAttribute("transform-origin", "494.5 135.7")
   graphKnobShadow.setAttribute("transform-origin", "490.7 144.05")
 
-  graphKnobHitBox.addEventListener('mousedown', ((event) => {
+  graphKnobHitBox.addEventListener('mousedown', (event) => {
     graphSpeedKnobClicked = true;
     if (event.preventDefault)
       event.preventDefault();
@@ -136,16 +150,16 @@ function go() {
     };
     initialGraphSpeed = graphSpeed;
     graphSpeedKnobPreviousRotation = 0;
-  }))
+  })
 
-  document.addEventListener('mouseup', ((event) => {
+  document.addEventListener('mouseup', (event) => {
     if (graphSpeedKnobClicked) {
       console.log('mouseup. graphspeed = ' + graphSpeed);
       graphSpeedKnobClicked = false;
     }
-  }))
+  })
 
-  document.addEventListener('mousemove', ((event) => {
+  document.addEventListener('mousemove', (event) => {
     if (graphSpeedKnobClicked) {
       mousePositionDelta = {
         x: event.clientX - mousePosition.x,
@@ -153,13 +167,16 @@ function go() {
       };
       turn(mousePositionDelta.y);
     }
-  }))
+  })
 }
 
 function turn(_rotation) {
+  
   graphKnobPerimeter.setAttribute("transform", "rotate(" + _rotation + ")")
   graphKnobShadow.setAttribute("transform", "rotate(" + _rotation + ")")
 
+  if (!graphEnabled) return
+  
   let rotationValueIncreasing = false
   let rotationValueDecreasing = false
 
@@ -191,12 +208,49 @@ function turn(_rotation) {
   updateGraphSpeedDisplay()
 }
 
+let timeout;
+
 function updateGraphSpeedDisplay() {
   let innerHTML = '';
-  let numOfChars = Math.ceil(graphSpeed / ((graphSpeedMaximum - 1) / 10))
-  for (let i = 0; i < numOfChars; i++) {
-    innerHTML = innerHTML + '.'
+  graphMessage(innerHTML); return;
+  if (graphSpeed == 0) {
+    innerHTML = '!!MINIMUM'
   }
+  else if (graphSpeed == 1023) {
+    innerHTML = '--MAXIMUM--'
+  }
+  else {
+    let numOfChars = Math.ceil(graphSpeed / ((graphSpeedMaximum - 1) / 10))
+    for (let i = 0; i < numOfChars; i++) {
+      innerHTML = innerHTML + '-'
+    }
+  }
+  graphSpeedValueElement.innerHTML = innerHTML
+  clearTimeout(timeout)
+  timeout = setTimeout(graphMessage,2000,innerHTML);
+  
+}
+
+function graphMessage(innerHTML) {
+  if (innerHTML == undefined) innerHTML = ''
+  let updatesPerSecond = 1000 / graphUpdateDelay;
+  if (!graphEnabled) {
+    innerHTML = "!GRAPH!OFF!"
+  }
+  else if (updatesPerSecond < 1) {
+    innerHTML = Math.round(1000 / graphUpdateDelay * 60) + "!PER!MIN";
+  }
+  else {
+    innerHTML = Math.round(1000 / graphUpdateDelay * 1) / 1 + "!PER!SEC";
+  }
+  
+  for (let i = innerHTML.length;i<11;i++)
+    {
+      innerHTML = "!" + innerHTML;
+      // console.log(i)
+      // let a = 1;
+    }
+  
   graphSpeedValueElement.innerHTML = innerHTML
 }
 
