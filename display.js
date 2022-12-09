@@ -5,6 +5,11 @@ want to do something more with it.
 
 created 6 Aug 2018
 by Tom Igoe
+
+SVG interface and subsequent functions-
+
+Nov 2022
+by Jason Copp
 */
 
 let value = "";
@@ -58,7 +63,7 @@ function fillDisplay(thisMeter) {
   // mainChart.data.datasets[0].data = data;
   // mainChart.data.datasets[0].label = units;
   // mainChart.update('none');
-  valueUpdated = true;
+  meterValueHasUpdated = true;
 }
 
 // clear all the display elements except the connection status:
@@ -71,12 +76,19 @@ function clearDisplay(meter) {
   document.getElementById('hold').value = '';
   document.getElementById('setting').value = '';
 }
-let valueUpdated = false;
-let lastValue = 0;
-let graphSlowestSpeed = 10000;
+
+document.addEventListener('DOMContentLoaded', (function () {
+  // wait for the svg to finish loading
+  setTimeout(initializeInterface, 100)
+}))
 
 const graphSpeedMaximum = 1023;
-const graphKnobResponsivenessFactor = 8
+const graphKnobResponsivenessFactor = 3
+let graphSpeed = 903;
+let graphUpdateDelay=420;
+
+let meterValueHasUpdated = false;
+let graphLastPlottedValue = 0;
 
 let graphKnobPerimeter
 let graphKnobHitBox
@@ -86,32 +98,42 @@ let graphButtonShadow
 let graphSpeedKnobClicked = false;
 let graphSpeedIndicator
 let graphSpeedValueElement
-
-let graphSpeed = 783;
 let initialGraphSpeed;
 let graphSpeedKnobPreviousRotation = 0
 let mousePosition = {}
 let mousePositionDelta = {}
 let graphInterval=0;
-let graphUpdateDelay=66.6666;
 let graphEnabled=false;
 
-
-let iv2;
-function enableGraphAnimation() {
+function startGraphAnimationInterval() {
   setInterval(() => {
     if (!graphEnabled) return
     let timeSinceLastUpdate = Date.now() - graphInterval;
-    graphUpdateDelay = 49/(Math.pow(((graphSpeed+150)/(graphSpeedMaximum+10)),3)) //magic!!
+    let stepsPerSec = 50;
+    let stepsPerMin = 60;
+    let maxMinutes = 60
+    let maxTimeFactor = stepsPerSec + stepsPerMin + maxMinutes - 3 // 3 is the number of blocks
+    let rounded = maxTimeFactor-Math.round(graphSpeed/graphSpeedMaximum*maxTimeFactor)+1
+
+    if (rounded < stepsPerSec) {
+      graphUpdateDelay = ((rounded) * (1000/stepsPerSec)) //+ (1000/30)
+    }
+    else if (rounded < stepsPerSec + stepsPerMin - 1)
+    {
+      graphUpdateDelay = (rounded-(stepsPerSec-1)) * 1000
+    }
+    else {
+       graphUpdateDelay = (rounded-(stepsPerSec + stepsPerMin - 2)) * 1000 * 60
+     }
     let graphShouldUpdate = (timeSinceLastUpdate > graphUpdateDelay)
     
     if (graphShouldUpdate) {
       data = data.slice(1);
-      if (valueUpdated) {
-        valueUpdated = false;
-        lastValue = parseFloat(value)
+      if (meterValueHasUpdated) {
+        meterValueHasUpdated = false;
+        graphLastPlottedValue = parseFloat(value)
       }
-      data.push(parseFloat(lastValue));
+      data.push(parseFloat(graphLastPlottedValue));
       mainChart.data.datasets[0].data = data;
       mainChart.data.datasets[0].label = units;
       mainChart.update('none');
@@ -120,58 +142,66 @@ function enableGraphAnimation() {
   }, 1000/30);
 }
 
-function go() {
+function initializeInterface() {
   graphButton = document.getElementById('gbutton')
   graphButtonShadow = document.getElementById('gbuttonshadow')
 
   graphKnobPerimeter = document.getElementById('knob')
+  graphKnobPerimeter.setAttribute("transform-origin", "494.5 135.7")
+
   graphKnobShadow = document.getElementById('knobshadow')
+  graphKnobShadow.setAttribute("transform-origin", "490.7 144.05")
+  
   graphKnobHitBox = document.getElementById('knobhitbox')
+  
   graphSpeedValueElement = document.getElementById('graph-speed-value')
   graphMessage()
-  enableGraphAnimation()
+  startGraphAnimationInterval()
 
-graphButton.addEventListener('mousedown', (event) => {
-  graphEnabled = !graphEnabled
-  graphButtonShadow.style.opacity = (graphButtonShadow.style.opacity == 0.3)?0:0.3
-  graphMessage()
-})
-
-  graphKnobPerimeter.setAttribute("transform-origin", "494.5 135.7")
-  graphKnobShadow.setAttribute("transform-origin", "490.7 144.05")
-
-  graphKnobHitBox.addEventListener('mousedown', (event) => {
+  //listeners
+  graphButton.addEventListener('mousedown', graphButtonAction)
+  function graphButtonAction(event) {
+    graphEnabled = !graphEnabled
+    graphButtonShadow.style.opacity = (graphButtonShadow.style.opacity == 0.3)?0:0.3
+    graphMessage()
+  }
+  
+  graphKnobHitBox.addEventListener('touchstart',graphKnobHitBoxAction)
+  graphKnobHitBox.addEventListener('mousedown',graphKnobHitBoxAction)
+  function graphKnobHitBoxAction(event) {
     graphSpeedKnobClicked = true;
     if (event.preventDefault)
       event.preventDefault();
+    
     mousePosition = {
-      x: event.clientX,
-      y: event.clientY
-    };
+      x: pointer(event).clientX,
+      y: pointer(event).clientY
+    }
     initialGraphSpeed = graphSpeed;
     graphSpeedKnobPreviousRotation = 0;
-  })
-
+  }
+  
   document.addEventListener('mouseup', (event) => {
     if (graphSpeedKnobClicked) {
-      console.log('mouseup. graphspeed = ' + graphSpeed);
       graphSpeedKnobClicked = false;
     }
   })
 
-  document.addEventListener('mousemove', (event) => {
+  document.addEventListener('mousemove', documentMoveAction)
+  document.addEventListener('touchmove', documentMoveAction)
+  function documentMoveAction(event) {
     if (graphSpeedKnobClicked) {
       mousePositionDelta = {
-        x: event.clientX - mousePosition.x,
-        y: event.clientY - mousePosition.y
+        x: pointer(event).clientX - mousePosition.x,
+        y: pointer(event).clientY - mousePosition.y
       };
-      turn(mousePositionDelta.y);
+      turnGraphSpeedKnob(mousePositionDelta.y);
     }
-  })
+  }
 }
 
-function turn(_rotation) {
-  
+function turnGraphSpeedKnob(_rotation) {
+
   graphKnobPerimeter.setAttribute("transform", "rotate(" + _rotation + ")")
   graphKnobShadow.setAttribute("transform", "rotate(" + _rotation + ")")
 
@@ -205,57 +235,62 @@ function turn(_rotation) {
   }
 
   graphSpeedKnobPreviousRotation = _rotation;
-  updateGraphSpeedDisplay()
+  graphMessage()
 }
 
-let timeout;
+function graphMessage() {
+  if (!graphEnabled) {
+      graphSpeedValueElement.innerHTML = "<br>!GRAPH!OFF!"
+      return;
+  }
 
-function updateGraphSpeedDisplay() {
-  let innerHTML = '';
-  graphMessage(innerHTML); return;
+  let displayLineOne = ''
+  let displayLineTwo = ''
+  
   if (graphSpeed == 0) {
-    innerHTML = '!!MINIMUM'
+    displayLineOne = '!!MINIMUM'
   }
   else if (graphSpeed == 1023) {
-    innerHTML = '--MAXIMUM--'
+    displayLineOne = '--MAXIMUM--'
   }
   else {
     let numOfChars = Math.ceil(graphSpeed / ((graphSpeedMaximum - 1) / 10))
     for (let i = 0; i < numOfChars; i++) {
-      innerHTML = innerHTML + '-'
+      displayLineOne = displayLineOne + '-'
     }
   }
-  graphSpeedValueElement.innerHTML = innerHTML
-  clearTimeout(timeout)
-  timeout = setTimeout(graphMessage,2000,innerHTML);
-  
-}
 
-function graphMessage(innerHTML) {
-  if (innerHTML == undefined) innerHTML = ''
-  let updatesPerSecond = 1000 / graphUpdateDelay;
-  if (!graphEnabled) {
-    innerHTML = "!GRAPH!OFF!"
+  if (graphUpdateDelay > 60000) {
+    displayLineTwo = "" + graphUpdateDelay/1000/60 + "!MINUTES!"
   }
-  else if (updatesPerSecond < 1) {
-    innerHTML = Math.round(1000 / graphUpdateDelay * 60) + "!PER!MIN";
+  else if (graphUpdateDelay == 60000) {
+    displayLineTwo = "" + graphUpdateDelay/1000/60 + "!MINUTE!!"
+  }
+  else if (graphUpdateDelay > 1000) {
+    displayLineTwo = "" + graphUpdateDelay/1000 + "!SECONDS!"
+  }
+  else if (graphUpdateDelay == 1000) {
+    displayLineTwo = "" + graphUpdateDelay/1000 + "!SECOND!!"
   }
   else {
-    innerHTML = Math.round(1000 / graphUpdateDelay * 1) / 1 + "!PER!SEC";
+    displayLineTwo = Math.round(graphUpdateDelay) + "!MS!!!";
+  }
+
+  // this is for right justification
+  for (let i = displayLineTwo.length;i<11;i++)
+  {
+    displayLineTwo = "!" + displayLineTwo;
   }
   
-  for (let i = innerHTML.length;i<11;i++)
-    {
-      innerHTML = "!" + innerHTML;
-      // console.log(i)
-      // let a = 1;
-    }
-  
-  graphSpeedValueElement.innerHTML = innerHTML
+  graphSpeedValueElement.innerHTML = displayLineOne + "<br>" + displayLineTwo
 }
 
-document.addEventListener('DOMContentLoaded', (function () {
-  // wait for the svg to finish loading
-  setTimeout(go, 100)
-}))
-
+function pointer(event) {
+  // crude & handy to ignore diff between mouse and touch
+  if (event.touches) {
+    return event.touches[0]
+  }
+  else {
+    return event
+  }
+}

@@ -1,7 +1,10 @@
 /* DSEG7 7SEG */
 :root {
-  --width-factor: calc(100vw * 1 - 20px);
-  --top-pad: 10px;
+  --width-factor:
+  calc(100vw * 1 - 20px);
+  --top-pad: 2px;
+--top-offset:
+  calc(0.104 * var(--width-factor) + var(--top-pad));
 }
 
 body {
@@ -24,19 +27,20 @@ body {
   width: calc(1 * var(--width-factor));
   position: absolute;
   top: 0px;
-  margin-top: calc(0.098 * var(--width-factor) + var(--top-pad));
   margin-left: calc(0.12 * var(--width-factor));
   font-family: "DSEG7-Classic";
+  margin-top: var(--top-offset);
 }
 .graphspeeddisplay {
   /* width: calc(0.1 * var(--width-factor)); */
   position: absolute;
   top: 0px;
-  margin-top: calc((0.297 * var(--width-factor)) + var(--top-pad));
-  margin-left: calc(0.707 * var(--width-factor));
+  margin-top: calc((0.2995 * var(--width-factor)) + var(--top-pad));
+  margin-left: calc(0.7055 * var(--width-factor));
   font-size: calc(0.009 * var(--width-factor));
   font-family: "DSEG14-Classic";
   letter-spacing: 0.08vw;
+  line-height: 1.75vw;
 }
 
 .value {

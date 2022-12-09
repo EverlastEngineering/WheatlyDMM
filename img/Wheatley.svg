@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg viewBox="-2 -2 661 320" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+<svg viewBox="-5 -5 666 326" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
   <defs>
     <linearGradient gradientUnits="userSpaceOnUse" x1="325.959" y1="202.196" x2="325.959" y2="279.044" id="gradient-0" gradientTransform="matrix(0.999999, -0.001495, 0.001494, 0.998507, -82.377914, -150.091129)">
       <stop offset="0" style="stop-color: rgb(22, 19, 20);"/>
@@ -19,7 +19,7 @@
       <stop offset="0" style="stop-color: rgb(122, 104, 85);"/>
       <stop offset="1" style="stop-color: rgb(100, 91, 73);"/>
     </linearGradient>
-    <linearGradient gradientUnits="userSpaceOnUse" x1="413.783" y1="69.584" x2="413.783" y2="179.485" id="gradient-4" gradientTransform="matrix(1, 0, 0, 1, -85.281387, -69.584406)">
+    <linearGradient gradientUnits="userSpaceOnUse" x1="413.783" y1="69.584" x2="413.783" y2="179.485" id="gradient-4" gradientTransform="matrix(1, 0, 0, 1, -85.281387, -69.584404)">
       <stop offset="0" style=""/>
       <stop offset="1" style="stop-color: rgb(41, 25, 25);"/>
     </linearGradient>
@@ -139,11 +139,11 @@
       <stop offset="0" style="stop-color: rgb(83, 61, 45);"/>
       <stop offset="1" style="stop-color: rgb(230, 190, 158);"/>
     </linearGradient>
-    <linearGradient gradientUnits="userSpaceOnUse" x1="325.959" y1="202.196" x2="325.959" y2="279.044" id="gradient-18" gradientTransform="matrix(0.168161, -0.000252, 0.000252, 0.167911, 439.613312, 157.453735)">
+    <linearGradient gradientUnits="userSpaceOnUse" x1="325.959" y1="202.196" x2="325.959" y2="279.044" id="gradient-18" gradientTransform="matrix(0.168161, -0.000589, 0.000252, 0.392383, 439.613312, 112.22903)">
       <stop offset="0" style="stop-color: rgb(22, 19, 20);"/>
       <stop offset="1" style="stop-color: rgb(39, 26, 26);"/>
     </linearGradient>
-    <linearGradient gradientUnits="userSpaceOnUse" x1="329.508" y1="120.671" x2="329.508" y2="197.519" id="gradient-27" gradientTransform="matrix(0.168151, -0.001886, 0.001004, 0.08957, 438.872284, 189.992767)">
+    <linearGradient gradientUnits="userSpaceOnUse" x1="329.508" y1="120.671" x2="329.508" y2="197.519" id="gradient-27" gradientTransform="matrix(0.168151, -0.004407, 0.001004, 0.209312, 438.872284, 188.267949)">
       <stop offset="0" style="stop-color: rgb(51, 51, 51);"/>
       <stop offset="1" style="stop-color: rgb(128, 128, 128);"/>
     </linearGradient>
@@ -189,7 +189,7 @@
     <path d="M 494.535 117.481 L 496.615787357 119.253872044 L 499.072098301 118.054168808 L 500.646618549 120.28881359 L 503.32411403 119.737660929 L 504.29343427 122.293667499 L 507.023877401 122.425696361 L 507.327091677 125.142461425 L 509.938918673 125.949375952 L 509.556974918 128.65619517 L 511.886075083 130.087293955 L 510.842972228 132.61408792 L 512.742999633 134.579449762 L 511.104279666 136.767450717 L 512.455848602 139.143584703 L 510.324478326 140.855312501 L 511.042664745 143.492917395 L 508.552565992 144.620817883 L 508.592243601 147.354163269 L 505.899878435 147.827366311 L 505.258554143 150.484706045 L 502.533093768 150.273478554 L 501.251064339 152.687842209 L 498.663759454 151.805456384 L 496.821579513 153.825140611 L 494.535 152.32704 L 492.248420487 153.825140611 L 490.406240546 151.805456384 L 487.818935661 152.687842209 L 486.536906232 150.273478554 L 483.811445857 150.484706045 L 483.170121565 147.827366311 L 480.477756399 147.354163269 L 480.517434008 144.620817883 L 478.027335255 143.492917395 L 478.745521674 140.855312501 L 476.614151398 139.143584703 L 477.965720334 136.767450717 L 476.327000367 134.579449762 L 478.227027772 132.61408792 L 477.183924917 130.087293955 L 479.513025082 128.65619517 L 479.131081327 125.949375952 L 481.742908323 125.142461425 L 482.046122599 122.425696361 L 484.77656573 122.293667499 L 485.74588597 119.737660929 L 488.423381451 120.28881359 L 489.997901699 118.054168808 L 492.454212643 119.253872044 Z" style="fill: rgb(140, 96, 64);" id="knob" transform="matrix(1, -0.000001, 0.000001, 1, 0.000171, 0.000326)" bx:shape="star 494.535 135.725 18.244 18.244 0.91 25 1@596754e6" bx:origin="0.512761 0.509552"/>
     <ellipse style="stroke: rgb(176, 121, 83); fill: rgb(190, 136, 104);" cx="494.535" cy="135.653" rx="15.516" ry="15.516"/>
     <ellipse style="fill: none; stroke: url(#gradient-17); stroke-width: 0.8px;" cx="494.535" cy="135.653" rx="14.551" ry="14.551"/>
-    <ellipse style="opacity: 0;" cx="494.535" cy="135.653" rx="18.686" ry="18.686" id="knobhitbox"/>
+    <ellipse style="fill: rgba(176, 122, 83, 0.01);" cx="494.535" cy="135.653" rx="18.686" ry="18.686" id="knobhitbox"/>
   </g>
   <rect style="stroke-width: 0px; stroke: rgb(255, 52, 57); fill: rgb(202, 145, 90);" y="43.539" width="73.726" height="161.651" rx="10" ry="10" x="538.68"/>
   <g style="" transform="matrix(0.02906, 0, 0, 0.02906, 567.019897, 128.132385)">
@@ -247,7 +247,7 @@
       <path d="M 128.812 162.91 L 131.751 168.788 L 125.873 168.788 L 128.812 162.91 Z" style="stroke: rgb(255, 255, 255); stroke-linejoin: round; stroke-linecap: round; fill: rgb(117, 89, 62);" transform="matrix(0, 1, -1, 0, 471.318604, 113.972244)" bx:shape="triangle 125.873 162.91 5.878 5.878 0.5 0 1@a7079030"/>
       <path style="fill: none; stroke: rgb(255, 255, 255); stroke-linejoin: round; stroke-linecap: round;" d="M 308.653 239.849 L 308.653 245.719"/>
     </g>
-    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; letter-spacing: 1.3px; text-anchor: middle; white-space: pre;" x="495.221" y="67.501" transform="matrix(1, 0, 0, 1, -0.685997, 0)">GRAPH<tspan x="495.22100830078125" dy="1.2em">​</tspan>SPEED</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; letter-spacing: 1.3px; text-anchor: middle; white-space: pre;" x="495.221" y="67.501" transform="matrix(1, 0, 0, 1, -0.685997, 0)">GRAPH<tspan x="495.22100830078125" dy="1.2em">​</tspan>FREQUENCY</text>
     <text style="fill: rgb(255, 255, 255); font-family: &quot;Adobe Gothic Std&quot;; font-size: 8.3px; letter-spacing: 1.3px; text-anchor: middle; white-space: pre;" x="166.691" y="295.942" transform="matrix(1, 0, 0, 1, 340.306274, -51.015053)">ON<tspan x="166.6909942626953" dy="1em">​</tspan><tspan x="166.6909942626953" dy="1em">​</tspan><tspan x="166.6909942626953" dy="1em">​</tspan>OFF</text>
     <g transform="matrix(1, 0, 0, 1, 435.845795, -20.744011)">
       <rect style="fill: rgb(255, 255, 255);" x="64.89" y="254.884" width="12.523" height="1.479" rx="1" ry="1"/>
@@ -339,7 +339,7 @@
     </g>
   </g>
   <path style="stroke-width: 0px; fill: url(#gradient-4); fill-opacity: 0.18;" d="M 12.966 0 L 644.038 0 C 651.199 0 657.004 5.805 657.004 12.966 L 631.281 68.749 L 25.686 110.269 L 0 12.966 C 0 5.805 5.805 0 12.966 0 Z"/>
-  <g id="graphspeedindicator">
-    <rect style="stroke-width: 0.5px; fill: url(#gradient-18); stroke: url(#gradient-27);" x="462.286" y="191.283" width="64.498" height="12.923" rx="2" ry="2"/>
+  <g>
+    <rect style="stroke-width: 0.5px; fill: url(#gradient-18); stroke: url(#gradient-27);" x="462.286" y="191.283" width="64.498" height="30.199" rx="2" ry="2"/>
   </g>
 </svg>
